@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title> Torneos de Futbol</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <li> <a href="#"> Torneos</a></li>
                 <li> <a href="#"> Fotos</a></li>
             </ul>
-        </div>
+            </div>
         </nav>
     </div>
     <section id="main"> 
@@ -45,9 +46,67 @@
             Equipo: La tecca <img src="Assets/imagenes/foto la tecca.jpg" alt="foto del equipo" width="200px"> <br>
             Equipo: Piranias FC <img src="Assets/imagenes/foto de piranias.jpg" alt="foto del equipo" width="200px"> <br>
 
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"></div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Assets/imagenes/jugando al futbol2.jpg" class="d-block w-100" alt="Foto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Equipo:Los displiscentes</h5>
+                      <p>Partido contra Esquiu, 3-2 abajo</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Assets/imagenes/jugando al futbol1.jpg" class="d-block w-100" alt="foto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Equipo: Fecha Libre</h5>
+                      <p>Partido contra Las liebres, 3-3</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Assets/imagenes/jugando al futbol3.jpg" class="d-block w-100" alt="foto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Equipo: La tecca</h5>
+                      <p>Partido contra La falcioneta, 4-2 arriba</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="Anterior">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="Siguiente">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+
             <h3> <u> Goleadores del torneo</u></h3>
-            Nombre: Lucas, pichichi, Rodriguez <img src="Assets/imagenes/foto lucas.jpg" alt="foto lucas" width="160px"> <br>
-            Nombre: Luca, la liebre, Fechino <img src="Assets/imagenes/foto luca.jpg" alt="foto luca" width="160px"> <br>
+            <div class="card-group">
+                <div class="card">
+                  <img src="Assets/imagenes/foto lucas.jpg" class="card-img-top" alt="foto del goleador">
+                  <div class="card-body">
+                    <h5 class="card-title">Lucas, el pichichi, Rodriguez</h5>
+                    <p class="card-text">El es Lucas, el maximo goleador del torneo(hasta ahora) con 25 goles, mide 1.78, pesa 77 kg y se destaca por su rapidez.</p>
+                    <p class="card-text"><small class="text-muted">Ultima actualizacion hace 1 semana</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="Assets/imagenes/foto luca.jpg" class="card-img-top" alt="foto del 2 goleador">
+                  <div class="card-body">
+                    <h5 class="card-title">Luca, la liebre, Fechino</h5>
+                    <p class="card-text">Luca, segundo goleador del torneo con 20 goles, mide 1.94, pesa 80 kg y se destaca por aguantar bien las pelotas y su gran cabezazo.</p>
+                    <p class="card-text"><small class="text-muted">Ultima actualizacion hace 1 semana</small></p>
+                  </div>
+                </div>
+            </div>
+           
 
             <h3> <u> Inscribite a nuestro torneo </u></h3>
             Nombre y Apellido:<input name="nombre y apellido" type="text">
@@ -65,8 +124,9 @@
     <footer>
 
         <h3> Sobre Nosotros: </h3>
+        <caption> <strong> Informacion </strong></caption>
         <table border ="10px solid black"> 
-            <caption> <strong> Informacion </strong></caption>
+        
             <thead>
                 <tr> 
                     <th> Ubicacion </th>
