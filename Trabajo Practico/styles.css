@@ -39,6 +39,10 @@ nav img{
     max-height: 250px;
 }
 
+div button{
+    color: red;
+}
+
 .buttom{
     display: flex;
     align-self: flex-end;
@@ -52,5 +56,5 @@ footer table{
 }
 
 footer{
-    background-color: whitesmoke;
+    background-color: green
 }
